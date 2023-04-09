@@ -39,7 +39,7 @@ class Presenter:
             self.view.clear_putput()
 
         if not self.model.check_units(unit1=from_unit, unit2=to_unit):
-            print(f"Unable to convert {from_unit} to {to_unit}")
+            print(f"Unable to convert {from_unit.value} to {to_unit.value}")
             self.view.clear_putput()
     
     def run(self) -> None:

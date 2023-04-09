@@ -4,9 +4,6 @@ from units import CONVERTER, Units
 class Model:
     conversions = CONVERTER
 
-    def __init__(self):
-        pass
-
     def convert(self, convert_from: Units, convert_to: Units, value: float | int):
         return self.conversions[(convert_from, convert_to)](value)
     
